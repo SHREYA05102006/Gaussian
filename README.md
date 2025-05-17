@@ -8,15 +8,16 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-1.import numpy module and sys module
+1.Read the number of variables n. Create an augmented matrix a of size 𝑛×(𝑛+1) to hold coefficients and constants.
 
-2.Get input from the user for number of rows and add it by 1 for number of column
+2.Create a solution vector x of size n. 
 
-3.Using np.zeros() set the matrix as null matrix.
+3.For each pivot row, check if the pivot element is zero (exit if true). For all rows below the pivot, eliminate the variable using row operations.
 
-4.Using nested for loop find the ratio and perform the elementary row operations and find the final matrix.
+4.Start from the last equation and solve for one variable at a time, moving upwards.
 
-5.print and end the program
+5.Print each variable X0, X1, ..., Xn-1 with 2 decimal precision.
+
 
 ## Program:
 ``` python
